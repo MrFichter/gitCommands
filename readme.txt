@@ -49,9 +49,10 @@ ssh-keygen  #generates a pair of public and private keys
 cat id_rsa.pub #highlight with mouse and use control + shift + c to copy. then go to github settings in your browser and add
 
 
-
 vim .git/config   #for a given repo, copy from browser the ssh stuff and \
 #paste it over the https stuff
+
+git push -u origin master (I don’t know what the -u stands for)
 
 
 
