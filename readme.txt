@@ -1,44 +1,56 @@
 
 TO ADD NEW REPO TO GIT FROM COMMAND LINE: 
 
-git remote add origin ssh://url.to/githubrepository  
 
-# example, I think: 
+create new repo on github.com
 
-# git remote add origin ssh://https://github.com/MrFichter/pygameTest
+create directory
+
+git init
+
+create readme
+
+git add readme
+
+git commit
+
+git remote add origin ssh://https://github.com/MrFichter/pygameTest
+
+[add ssh, or...]
 
 git push
 
-OR: follow the steps below. They are similar but use https instead of the ssh 
-(THIS IS WHAT GITHUB RECOMMENDS)
-
+all of the above is described here
 https://help.github.com/articles/create-a-repo
-
-NOTE: You need to go to github.com to create a repo before you do this.
-
-After that, you can just do git push
-
 
 
 
 
 SETTING UP AN SSH KEY SO THAT YOU DON’T HAVE TO ENTER A PASSWORD
 
+etting up an SSH key so that you don’t have to enter a password
+
+----(IF YOU DON’T ALREADY HAVE AN SSH KEY)
 
 cd #to get to home directory
 
 mkdir .ssh #if it doesn’t exist already
 
+
 cd .ssh
 
-ssh-keygen  #generates a pair of public and private keys
+
+ssh-keygen  #generates a pair of public and private keys
 
 [press Enter to opt out of other things a few times]
+
+----(IF YOU ALREADY HAVE AN SSH KEY)
 
 cat id_rsa.pub #highlight with mouse and use control + shift + c to copy. then go to github settings in your browser and add
 
 
-vim .git/config   #for a given repo, copy from browser the ssh stuff and \
+
+vim .git/config   #for a given repo, copy from browser the ssh stuff and \
 #paste it over the https stuff
 
 
