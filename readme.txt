@@ -2,6 +2,7 @@
 TO ADD NEW REPO TO GIT FROM COMMAND LINE: 
 
 
+
 create new repo on github.com
 
 create directory
@@ -14,23 +15,27 @@ git add readme
 
 git commit
 
-git remote add origin ssh://https://github.com/MrFichter/pygameTest
+git remote add origin git@github.com:MrFichter/FutureProjectIdeas.git
 
-[add ssh, or...]
+[add ssh key if you haven’t added for this computer key]
 
-git push
+vim .git/config   #for a given repo, copy from browser the ssh stuff and \
+#paste it over the https stuff
+git push -u origin master 
+
+# The -u option automatically sets that upstream for you, linking your repo to a central one. That way, in the future, Git "knows" where you want to push to and where you want to pull from, so you can use git pull or git push without arguments. (from http://stackoverflow.com/questions/5561295/what-does-git-push-u-mean)
+
+
 
 all of the above is described here
 https://help.github.com/articles/create-a-repo
 
 
-
-
 SETTING UP AN SSH KEY SO THAT YOU DON’T HAVE TO ENTER A PASSWORD
 
-etting up an SSH key so that you don’t have to enter a password
 
 ----(IF YOU DON’T ALREADY HAVE AN SSH KEY)
+
 
 cd #to get to home directory
 
@@ -44,15 +49,10 @@ ssh-keygen  #generates a pair of public and private keys
 
 [press Enter to opt out of other things a few times]
 
-----(IF YOU ALREADY HAVE AN SSH KEY)
 
-cat id_rsa.pub #highlight with mouse and use control + shift + c to copy. then go to github settings in your browser and add
+cat id_rsa.pub #highlight with mouse and use control + shift + c to copy. then go to the main github settings in your browser and add, naming your new computer
 
 
-vim .git/config   #for a given repo, copy from browser the ssh stuff and \
-#paste it over the https stuff
-
-git push -u origin master (I don’t know what the -u stands for)
 
 
 
