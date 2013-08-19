@@ -1,4 +1,4 @@
-
+﻿
 TO ADD NEW REPO TO GIT FROM COMMAND LINE: 
 
 
@@ -31,6 +31,18 @@ all of the above is described here
 https://help.github.com/articles/create-a-repo
 
 
+
+
+GIT CLONE WITH HTTPS. BEST OPTION IF YOUR PC DOES NOT HAVE
+AN SSH KEY.
+
+git clone https://mrfichter@github.com/MrFichter/FutureProjectIdeas.git
+
+
+
+
+
+
 SETTING UP AN SSH KEY SO THAT YOU DON’T HAVE TO ENTER A PASSWORD
 
 
@@ -54,11 +66,11 @@ cat id_rsa.pub #highlight with mouse and use control + shift + c to copy. then g
 
 
 
+GIT CLONE. BEST OPTION WHEN YOU HAVE AN SSH KEY.
+
+git clone git://github.com/MrFichter/FutureProjectIdeas (case sensitive)
 
 
-GIT CLONE WHEN YOU WANT TO BE ABLE TO PUSH TO IT
-
-git clone https://mrfichter@github.com/MrFichter/FutureProjectIdeas.git
 
 
 
